@@ -1,0 +1,97 @@
+.product-item{
+  width: 20%;
+  height: 250px;
+  float:left;
+  margin-left:4%;
+  margin-bottom: 2%;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 15px blue;
+}
+.product-item:hover{
+  width: 20%;
+  height: 250px;
+  float:left;
+  margin-left: 4%;
+  margin-bottom: 2%;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 30px blue;
+}
+.product-image{
+  width: 90%;
+  margin-left: 5%;
+
+}
+.cart-img{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 2%;
+  opacity: 0.7;
+}
+.cart-img:hover{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 2%;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.product-tile-footer{
+  text-align: center;
+  color:blue;
+
+}
+.product-title{
+  font-weight: bold;
+}
+.product-price{
+  color: #D43D19;
+  font-weight: bolder;
+}
+.product-quantity{
+  text-align: right;
+}
+.btnAddAction{
+  background-color: #007BFF;
+  color:white;
+  border:1px solid #007BFF;
+  border-radius: 0.3em;
+}
+
+/*stilovi za cart-item-s*/
+.cart-item-image{
+  width: 20%;
+}
+.central-container{
+  box-shadow: 0px 0px 20px blue;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 1%;
+}
+.central-container-img{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+#container-img{
+  width: 700px;
+  height: 500px;
+  margin-left:10%;
+}
+#text{
+  text-align: center;
+  background-color: rgba(0, 123, 255,0.8);
+  margin-top: -5%;
+  color: white;
+  width: 100%;
+}
+.clear-all{
+  padding: 6px;
+  float: right;
+  margin-right: 10%;
+  margin-top: -7.7%;
+  text-decoration: none;
+  font-weight: bolder;
+  background-color: #007BFF;
+  border:1px solid #007BFF;
+  border-radius: 0.3em;
+}
