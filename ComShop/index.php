@@ -31,15 +31,15 @@ var image = document.getElementById("container-img");
 <!--Javascript za promenu naslova zajedno sa slikama-->
   <script type="text/javascript">
     var text = ["Kvalitetan servis racunara i komponenti", "Odlicna ONLINE prodavnica", "Veliki izbor racunara"];
-    var pozicija = 0;
-    var element = document.getElementById("text");
-    var inst = setInterval(promeniText, 3000);
+    var counter = 0;
+    var elem = document.getElementById("text");
+    var inst = setInterval(change, 3000);
 
-    function promeniText() {
-      element.innerHTML = text[pozicija];
-      brojac++;
-        if (pozicija >= text.length) {
-      brojac = 0;
+    function change() {
+      elem.innerHTML = text[counter];
+      counter++;
+        if (counter >= text.length) {
+      counter = 0;
 
   }
 }

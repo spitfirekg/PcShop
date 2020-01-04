@@ -6,6 +6,7 @@ $cart = new Cart();
 $cart->setSKU($_POST["sku"]);
 $productByCode = $cart->getProduct();
 
+
 if(!empty($_POST["quantity"])) {
   $itemArray = array($productByCode["sku"]=>array('name'=>$productByCode["name"], 'sku'=>$productByCode["sku"], 'quantity'=>$_POST["quantity"], 'price'=>$productByCode["price"], 'image'=>$productByCode["image"]));
 
@@ -57,4 +58,4 @@ echo json_encode($json);
 	        }
 	    });
 	});
-</script>	
+</script>
