@@ -25,12 +25,14 @@ if(!empty($_SESSION["cart_item"])){
 		<table class="tbl-cart" cellpadding="10" cellspacing="1">
 		<thead>
 			<tr>
+
 				<th style="text-align:left;">Name</th>
 				<th style="text-align:center;" width="20%">Model</th>
 				<th style="text-align:right;" width="5%">Kolicina</th>
 				<th style="text-align:right;" width="10%">Cena</th>
 				<th style="text-align:right;" width="15%">Ukupno</th>
 				<th style="text-align:center;" width="5%">Ukloni</th>
+
 			</tr>
 		</thead>
 		<tbody id="render-cart-data">
@@ -47,17 +49,21 @@ if(!empty($_SESSION["cart_item"])){
 						<td style="text-align:center;"><a data-sku="<?php echo $item["sku"]; ?>" class="text-danger btnRemoveAction"><i class="fa fa-times" aria-hidden="true"></i></a></td>
 						</tr>
 						<?php
+
+
 						$total_quantity += $item["quantity"];
 						$total_price += ($item["price"]*$item["quantity"]);
 				}
 				?>
 
-
 				<tr>
-					<td colspan="2" align="right">Ukupna cena i kolicina:</td>
-					<td align="right" id="render-qty"><?php echo $total_quantity; ?></td>
+
+					<td colspan="2" align="right"><b>Ukupna kolicina i cena :</b></td>
+					<td align="right" id="render-qty"><b><?php echo $total_quantity; ?></b></td>
 					<td align="right" colspan="2" id="render-total"><strong><?php echo number_format($total_price, 2)." Rsd"; ?></strong></td>
+					<td><a href="checkout.php"><button class="checkout-btn-style">Potvrdi kupovinu >>>>>></button></a></td>
 					<td></td>
+
 				</tr>
 				</tbody>
 			<tfoot>
@@ -65,11 +71,13 @@ if(!empty($_SESSION["cart_item"])){
 
 					<td colspan="2"><a href="proizvodi.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Vratite se na kupovinu</a></td>
 					<td ></td>
-					<td colspan="3"></td>
+
 				</tr>
+
 			</tfoot>
 
 		</table>
+
 		  <?php
 		} else {
 		?>
@@ -84,6 +92,7 @@ if(!empty($_SESSION["cart_item"])){
 				<td colspan="2"><a href="proizvodi.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Vratite se na kupovinu</a></td>
 				<td></td>
 				<td></td>
+
 			</tr>
 		</tfoot>
 		</table>

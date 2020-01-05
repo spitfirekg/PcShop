@@ -13,7 +13,7 @@
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="#">Uslovi korscenja</a>
+              <a href="#">Uslovi koriscenja</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
